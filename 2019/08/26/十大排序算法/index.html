@@ -4,8 +4,36 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
-    <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex">
+    <meta name="keywords" content="十大排序算法, Hexo">
+    <meta name="description" content="一：总体比较
+
+
+排序算法
+平均时间复杂度
+最好情况
+最坏情况
+空间复杂度
+排序方式
+稳定性
+
+
+
+冒泡排序
+O(n^2)
+O(n)
+O(n^2)
+O(1)
+
+稳定
+
+
+选择排序
+O(n^2)
+O(n^2)
+O(n^2)
+O(1)
+
+不稳定">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +41,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Hello World | Hexo</title>
+    <title>十大排序算法 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
@@ -260,13 +288,13 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/9.jpg')">
     <div class="container">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
                     <div class="description center-align post-title">
-                        Hello World
+                        十大排序算法
                     </div>
                 </div>
             </div>
@@ -375,9 +403,13 @@
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/算法/" target="_blank">
+                                <span class="chip bg-color">算法</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
@@ -404,19 +436,164 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+                <h1 id="一：总体比较"><a href="#一：总体比较" class="headerlink" title="一：总体比较"></a>一：总体比较</h1><table>
+<thead>
+<tr>
+<th align="center">排序算法</th>
+<th align="center">平均时间复杂度</th>
+<th align="center">最好情况</th>
+<th align="center">最坏情况</th>
+<th align="center">空间复杂度</th>
+<th align="center">排序方式</th>
+<th align="center">稳定性</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">冒泡排序</td>
+<td align="center">O(n^2)</td>
+<td align="center">O(n)</td>
+<td align="center">O(n^2)</td>
+<td align="center">O(1)</td>
+<td align="center"></td>
+<td align="center">稳定</td>
+</tr>
+<tr>
+<td align="center">选择排序</td>
+<td align="center">O(n^2)</td>
+<td align="center">O(n^2)</td>
+<td align="center">O(n^2)</td>
+<td align="center">O(1)</td>
+<td align="center"></td>
+<td align="center">不稳定</td>
+</tr>
+<tr>
+<td align="center">插入排序</td>
+<td align="center">O(n^2)</td>
+<td align="center">O(n)</td>
+<td align="center">O(n^2)</td>
+<td align="center">O(1)</td>
+<td align="center"></td>
+<td align="center">稳定</td>
+</tr>
+<tr>
+<td align="center">归并排序</td>
+<td align="center">O(nlogn)</td>
+<td align="center">O(nlogn)</td>
+<td align="center">O(nlogn)</td>
+<td align="center">O(n)</td>
+<td align="center"></td>
+<td align="center">稳定</td>
+</tr>
+<tr>
+<td align="center">快速排序</td>
+<td align="center">O(nlogn)</td>
+<td align="center">O(nlogn)</td>
+<td align="center">O(n^2)</td>
+<td align="center">(logn)</td>
+<td align="center"></td>
+<td align="center">不稳定</td>
+</tr>
+<tr>
+<td align="center">堆排序</td>
+<td align="center">O(nlogn)</td>
+<td align="center">O(nlogn)</td>
+<td align="center">O(nlogn)</td>
+<td align="center">O(1)</td>
+<td align="center"></td>
+<td align="center">不稳定</td>
+</tr>
+<tr>
+<td align="center">计数排序</td>
+<td align="center">O(n+k)</td>
+<td align="center">O(n+k)</td>
+<td align="center">O(n+k)</td>
+<td align="center">O(k)</td>
+<td align="center"></td>
+<td align="center">稳定</td>
+</tr>
+<tr>
+<td align="center">桶排序</td>
+<td align="center">O(n+k)</td>
+<td align="center">O(n+k)</td>
+<td align="center">O(n^2)</td>
+<td align="center">O(n+k)</td>
+<td align="center"></td>
+<td align="center">稳定</td>
+</tr>
+<tr>
+<td align="center">基数排序</td>
+<td align="center">O(n*k)</td>
+<td align="center">O(n*k)</td>
+<td align="center">O(n*k)</td>
+<td align="center">O(n+k)</td>
+<td align="center"></td>
+<td align="center">稳定</td>
+</tr>
+</tbody></table>
+<p>希尔排序：最好情况O(n)</p>
+<table>
+<thead>
+<tr>
+<th>步长序列</th>
+<th>补充说明</th>
+<th>最坏情况下复杂度</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>n/2^i</td>
+<td>对步长取半直到步长达到1</td>
+<td>O(n^2)</td>
+</tr>
+<tr>
+<td>2^k-1</td>
+<td>Hibbard增量（1,3,5,7…）</td>
+<td>O(n^1.5)</td>
+</tr>
+<tr>
+<td>3*x+1</td>
+<td></td>
+<td><a href="https://zhuanlan.zhihu.com/p/31173825" target="_blank" rel="noopener">O(n^1.5)</a></td>
+</tr>
+<tr>
+<td>2^i*3^j</td>
+<td></td>
+<td><u>O(n log^2 n)</u></td>
+</tr>
+</tbody></table>
+<h1 id="二：算法详述"><a href="#二：算法详述" class="headerlink" title="二：算法详述"></a>二：算法详述</h1><ol>
+<li>冒泡排序：依次从左往右遍历数组，如果<strong>相邻</strong>两个数a[i]&gt;a[i+1]，则交换两个数的位置，第一次遍历会将最大的数排到数组最后。经过a.length-1轮循环之后，数组从小到大排好序。可以看出双重循环，时间复杂度为O(n^2)。经过优化之后，最好情况（已经排好序的数组）下时间复杂度是O(n)。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">gudugudu</span><span class="params">(<span class="keyword">int</span> a[])</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> temp=<span class="number">0</span>;</span><br><span class="line">    <span class="keyword">boolean</span> flag=<span class="keyword">true</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length-<span class="number">1</span>;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;a.length-<span class="number">1</span>-i;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="keyword">if</span>(a[j]&gt;a[j+<span class="number">1</span>])</span><br><span class="line">            &#123;</span><br><span class="line">                temp=a[j];</span><br><span class="line">                a[j]=a[j+<span class="number">1</span>];</span><br><span class="line">                a[j+<span class="number">1</span>]=temp;</span><br><span class="line">                flag=<span class="keyword">false</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span>(flag==<span class="keyword">true</span>)</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>选择排序：顾名思义，需要选择。第i次遍历，从数组a[i-1:]中<strong>选出</strong>最小的元素，和a[i-1]交换，经过a.length-1轮循环之后，数组从小到大排好序。同样，双重循环，时间复杂度为O(n^2)。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">select</span><span class="params">(<span class="keyword">int</span> a[])</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">int</span> min=<span class="number">0</span>,temp=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length-<span class="number">1</span>;i++)</span><br><span class="line">        &#123;</span><br><span class="line">            min=a[i];</span><br><span class="line">            <span class="keyword">for</span>(<span class="keyword">int</span> j=i;j&lt;a.length;j++)</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="keyword">if</span>(min&gt;a[j])</span><br><span class="line">                &#123;</span><br><span class="line">                    min=a[j];</span><br><span class="line">                    temp=j;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(min!=a[i])</span><br><span class="line">            &#123;</span><br><span class="line">                a[temp]=a[i];</span><br><span class="line">                a[i]=min;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>插入排序：顾名思义，需要插入。每次遍历都是一个<strong>插入</strong>的过程，是一个维护有序队列的过程。第一次遍历的时候，假设a[0]是一个有序队列（只有一个数字，无所谓有序无序），第一次遍历的目的是要将a[1]<strong>插入</strong>到a[0]这个有序队列中，即如果a[0]&gt;a[1]，则需要将a[1]<strong>插入</strong>到a[0]前面。第二次遍历的目的是要将a[2]<strong>插入</strong>到a[0],a[1]组成的有序队列中，…，直到第a.length-1次遍历将a[a.length-1]<strong>插入</strong>到前面的有序队列中。下面我自己想的代码很麻烦，没有参考资料2中的简洁。不过可以看出来最好情况下（已经排好序的数组）每次都只进一次内层的for循环就break出来，时间复杂度为O(n)。</li>
+</ol>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">insert</span><span class="params">(<span class="keyword">int</span> a[])</span></span></span><br><span class="line"><span class="function">   </span>&#123;</span><br><span class="line">       <span class="keyword">int</span> temp=<span class="number">0</span>,index=<span class="number">0</span>;</span><br><span class="line">       <span class="keyword">boolean</span> flag=<span class="keyword">true</span>;</span><br><span class="line">       <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;a.length-<span class="number">1</span>;i++)</span><br><span class="line">       &#123;</span><br><span class="line">           <span class="keyword">for</span>(<span class="keyword">int</span> j=i;j&gt;=<span class="number">0</span>;j--)</span><br><span class="line">           &#123;</span><br><span class="line">               <span class="keyword">if</span>(a[i+<span class="number">1</span>]&lt;a[j])</span><br><span class="line">               &#123;</span><br><span class="line">                   temp=a[i+<span class="number">1</span>];</span><br><span class="line">                   index=j;</span><br><span class="line">                   flag=<span class="keyword">false</span>;</span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">               &#125;</span><br><span class="line">               <span class="keyword">else</span></span><br><span class="line">                   <span class="keyword">break</span>;</span><br><span class="line">           &#125;</span><br><span class="line">           <span class="keyword">if</span>(flag==<span class="keyword">false</span>)</span><br><span class="line">           &#123;</span><br><span class="line">               <span class="keyword">for</span>(<span class="keyword">int</span> k=i+<span class="number">1</span>;k&gt;index;k--)</span><br><span class="line">               &#123;</span><br><span class="line">                   a[k]=a[k-<span class="number">1</span>];</span><br><span class="line">               &#125;</span><br><span class="line">               a[index]=temp;</span><br><span class="line">               flag=<span class="keyword">true</span>;</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li><p><a href="https://zh.wikipedia.org/wiki/希尔排序" target="_blank" rel="noopener">希尔排序</a>：算是插入排序的一个改进，因为插入排序每次只能将数据移动一位，所以大规模乱序数组下效率较低。希尔排序通过将比较的全部元素分为几个区域来提升插入排序的性能。这样可以让一个元素可以一次性地朝最终位置前进一大步。然后算法再取越来越小的步长进行排序，算法的最后一步就是普通的插入排序，但是到了这步，需排序的数据几乎是已排好的了（此时插入排序较快）。</p>
+<p>假设数组a的长度为10，则</p>
+<p>第一次循环的时候，gap=10/2=5，一共五个组别，每个组别两个数字，每个组内的数字在数组中的间隔为5，比如a[0]和a[5]是一组。分别对这五个组别进行插入排序；</p>
+<p>第二次循环的时候，gap=5/2=2，则一共两个组别，每个组别五个数字，比如a[0]、a[2]、a[4]、a[6]、a[8]为一个组。分别对这两个组别进行插入排序；</p>
+<p>第三次循环的时候，gap=2/2=1，则对整个数组a进行插入排序。</p>
+<p>其中对gap的取值算是经验值吧。代码我不会写，参照[2]写的。</p>
+<p>如果gap=1，则退化成直接插入排序，此时的时间复杂度为O(n^2)。</p>
+<p>时间复杂度与gap的选取有关，可参考上面，具体怎么算出来的我是晕的…</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">public static void shell(int a[])</span><br><span class="line">    &#123;</span><br><span class="line">        int length=a.length;</span><br><span class="line">        int gap=1;</span><br><span class="line">        while (gap&lt;length)</span><br><span class="line">        &#123;</span><br><span class="line">            gap=gap*3+1;</span><br><span class="line">        &#125;</span><br><span class="line">        while (gap&gt;0)</span><br><span class="line">        &#123;</span><br><span class="line">            int temp=0;</span><br><span class="line">            for(int i=0;i&lt;length-gap;i++)</span><br><span class="line">            &#123;</span><br><span class="line">                temp=a[i+gap];</span><br><span class="line">                int j=i;</span><br><span class="line">                for(;j&gt;=0;j=j-gap)</span><br><span class="line">                &#123;</span><br><span class="line">                    if(a[j]&gt;temp)</span><br><span class="line">                    &#123;</span><br><span class="line">                        a[j+gap]=a[j];</span><br><span class="line">                    &#125;</span><br><span class="line">                    else</span><br><span class="line">                        break;</span><br><span class="line">                &#125;</span><br><span class="line">                a[j+gap]=temp;</span><br><span class="line">            &#125;</span><br><span class="line">            gap=gap/3;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+<ol start="5">
+<li>归并排序：即合并，核心是分治法，就是将一个数组递归的切成两半，直到切成单个元素，然后单个元素排序合并成小的顺序队列，小的顺序队列再继续合并成大的顺序队列，直到最终合并完成。这个看动画很清楚。</li>
+</ol>
+<p>参考资料：</p>
+<p>1、<a href="https://www.jianshu.com/p/183eab4e56cc" target="_blank" rel="noopener">https://www.jianshu.com/p/183eab4e56cc</a> 用动画演示了排序算法的原理，很清晰</p>
+<p>2、<a href="https://www.jianshu.com/p/edfa25a2b1ca" target="_blank" rel="noopener">https://www.jianshu.com/p/edfa25a2b1ca</a>  对算法进行了详细的文字说明和图解，很清楚</p>
 
             </div>
             <hr/>
@@ -575,9 +752,9 @@
             <br/>
             <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
                   property="dct:title" rel="dct:type">
-                    《Hello World》
+                    《十大排序算法》
                 </span> 由
-            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/26/hello-world/" property="cc:attributionName"
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2019/08/26/十大排序算法/" property="cc:attributionName"
                rel="cc:attributionURL">
                 我胆小如鼠
             </a> 采用
@@ -617,9 +794,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
+        <div class="article col s12 m6 overflow-policy" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="fa fa-dot-circle-o"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2019/08/26/十大排序算法/">
                     <div class="card-image">
@@ -665,9 +843,9 @@ O(1)
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-26
-                        </span>
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2019-08-26
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fa fa-user fa-fw"></i>
@@ -676,6 +854,7 @@ O(1)
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -691,7 +870,7 @@ O(1)
         
         <div class="article col s12 m6 overflow-policy" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="fa fa-dot-circle-o"></i>
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2019/08/26/hello-world/">
@@ -721,7 +900,6 @@ O(1)
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
