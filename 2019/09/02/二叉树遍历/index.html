@@ -377,8 +377,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/数据结构-LeeCode/" target="_blank">
-                                <span class="chip bg-color">数据结构 LeeCode</span>
+                            <a href="/tags/数据结构-树-LeeCode/" target="_blank">
+                                <span class="chip bg-color">数据结构 树 LeeCode</span>
                             </a>
                         
                     </div>
@@ -486,6 +486,7 @@
 <p>pre&#x662F;&#x4FDD;&#x5B58;&#x524D;&#x5E8F;&#x904D;&#x5386;&#x7684;&#x6570;&#x7EC4;&#xFF0C;index&#x662F;map&#xFF0C;&#x4FDD;&#x5B58;&#x4E86;&#x4E2D;&#x5E8F;&#x904D;&#x5386;&#x9879;&#x4E0E;&#x4E0B;&#x6807;&#x7684;&#x6620;&#x5C04;&#xFF0C;index.get&#x5373;&#x83B7;&#x53D6;&#x67D0;&#x4E00;&#x9879;&#x7684;&#x4E0B;&#x6807;&#x3002;inL&#x7528;&#x4E8E;&#x5E2E;&#x52A9;&#x5B9A;&#x4F4D;&#x4E0B;&#x6B21;&#x91CD;&#x5EFA;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x54EA;&#x4E00;&#x6BB5;&#xFF0C;preL&#x548C;preR&#x662F;&#x6307;&#x6B64;&#x6B21;&#x91CD;&#x5EFA;&#x5728;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x8D77;&#x59CB;&#x4E0B;&#x6807;&#x548C;&#x7ED3;&#x675F;&#x4E0B;&#x6807;&#x3002;</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> Node <span class="title">reCons</span><span class="params">(<span class="keyword">int</span>[] pre,<span class="keyword">int</span> preL,<span class="keyword">int</span> preR,<span class="keyword">int</span> inL)</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">    <span class="keyword">if</span>(preL&gt;preR)</span><br><span class="line">    {</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">    }</span><br><span class="line">    Node root=<span class="keyword">new</span> Node(pre[preL]);</span><br><span class="line">    <span class="keyword">int</span> inIndex=index.get(root.getData());</span><br><span class="line">    <span class="keyword">int</span> leftTreeSize=inIndex-inL;</span><br><span class="line">    root.setLeftChild(reCons(pre,preL+<span class="number">1</span>,preL+leftTreeSize,inL));</span><br><span class="line">    root.setRightChild(reCons(pre,preL+leftTreeSize+<span class="number">1</span>,preR,inL+leftTreeSize+<span class="number">1</span>));</span><br><span class="line">    <span class="keyword">return</span> root;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 
+<p>PS&#xFF1A;&#x5B8C;&#x6574;&#x4EE3;&#x7801;&#x5728;github&#x79C1;&#x4EBA;&#x4ED3;&#x5E93;</p>
 
             </div>
             <hr/>
@@ -722,8 +723,8 @@ https://cxyxiaowu.com/articles/2019/04/04/1554345441078.html#7-avl%E6%A0%91%E7
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/数据结构/" target="_blank">
-                        <span class="chip bg-color">数据结构</span>
+                    <a href="/tags/数据结构-树/" target="_blank">
+                        <span class="chip bg-color">数据结构 树</span>
                     </a>
                     
                 </div>
